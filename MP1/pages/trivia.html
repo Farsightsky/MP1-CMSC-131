@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Trivia - The Tales of Obscure Cosmos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../mycss.css">
+        <link rel="shortcut icon" href="imgs/TOC.ico" />
+        
+    </head>
+    <body>
+    <header>
+        <div class="topnavbar">
+            <nav >
+                <div>
+                    <ul>
+                        <li><a id="a1" href="../index.html">Home</a></li>
+                        <li><a id="a2" href="blog.html">Blog</a></li>
+                        <li><a id="a3" href="trivia.html">Random Trivia</a></li>
+                        <li><a id="a4" href="author.html">About the author</a></li>
+                        <li><a id="a5" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+    </header>
+        <div class="stars1"></div>
+        <div class="twinkle1"></div>
+        <div class=trivDisplay>
+            <p id="trivNum">
+            </p>
+        </div>
+    </body>
+    
+</html> 
+
+
+<script>
+(function newTrivia() {
+  var trivia = 
+  ["Sound does not travel in the vacuum of space.",
+  "Habitable zones are the areas in any star system that is neither too hot nor too cold to for liquid water to exist. These are also known as the Goldilocks zones.",
+  "White hole is a hypothetical region of spacetime wherein it cannot be entered from the outside. Essentially, it is a reverse of a black hole.",
+  "The universe is at its hottest during its birth.",
+  "The universe is flat, based on Einstein's Theory of General Relativity and the measurements taken by WMAP and CMBR.",
+  "The universe is expanding.",
+  "Planet K2-141b rains rocks, and its oceans are molten lava.",
+  "Barnard 68 is a molecular cloud in space that does not allow light to pass through.",
+  "Roughly 2.73 kelvins is the average temperature of the universe.",
+  "The concept of the multiverse started as a philosophical thought.",
+  "Uranus is the coldest planet in the solar System.",
+  "Mercury is the coldest planet in the solar system.",
+  "Mars is habitable.",
+  "Certain planets can have diamond cores.",
+  "Space junk is any human-object ejected in space that has no longer utlized",
+  "Sunset in Mars is blue.",
+  "Spaghettification is the process in which an object is stretched because of the gravitational pull of a black hole."];
+  var randomTriv = Math.floor(Math.random() * trivia.length);
+  document.getElementById('trivNum').innerText = trivia[randomTriv];
+})();
+</script>

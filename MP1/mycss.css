@@ -1,0 +1,241 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+:root{
+  --background: rgba(26, 26, 26, 0.24);
+}
+
+.topnavbar nav ul{
+  padding: 5px;
+  padding-top:10px;
+} 
+.topnavbar nav li{
+  display: inline-block;
+} 
+
+.topnavbar{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  }
+
+ div.topnavbar a{
+  text-decoration: none;
+  width: 100px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 17px;
+  border: 3px solid white;
+}
+
+div.topnavbar a:hover{
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 95);
+  transition-duration: 200ms;
+  border: 3px ridge rgb(255, 255, 95);
+  box-shadow: 0 0 9px rgba(255, 255, 95);
+}
+
+div.sidenav ul{
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  left: 10px;
+  background: var(--background);
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+div.sidenav a {
+  padding: 1px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+  transition: color 200ms ease-in-out;
+}
+
+div.sidenav a:hover {
+  color: rgb(255, 255, 95);
+}
+
+
+div.titlecard, div.blogtitle {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+div.titlecard h1, div.blogtitle h1{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 50px 50px;
+  font-size:50px;
+  margin: auto;
+}
+
+div.tribble{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+div.blackhole{
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 100%
+}
+
+div.satellite {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 100%;
+}
+
+div.satellite img{
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+div.flight {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 100%;
+}
+
+div.flight img{
+  border: 3px solid white;
+  border-radius: 12px;
+  width: 15%;
+}
+
+div.astronaut{
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.space{
+  padding: 10px;
+}
+
+.mainpagetxt{
+  background: var(--background);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.trivDisplay{
+  background: var(--background);
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+.mainpagetxt p, .trivDisplay p{
+  color: white;
+  padding-left:10%;
+	padding-right:10%;
+	font-size: 20px;
+}
+
+.mainpagetxt p{
+  text-align: justify;
+}
+
+.trivDisplay p{
+  text-align: center;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars1, .stars2, .twinkle1, .twinkle2   {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.stars1 {
+  display:block;
+  background:#000 url(imgs/fs1.png) repeat top center;
+  z-index:-2;
+}
+
+.stars2 {
+  display:block;
+  background:#000 url(imgs/fs2.png) repeat top center;
+  z-index:-2;
+}
+
+.twinkle1, .twinkle2{
+  background: transparent url(imgs/twinkle.png) repeat top center;
+  z-index:-1;
+}
+
+.twinkle1{
+  animation:move-twink-back 500s linear infinite;
+}
+
+.twinkle2{
+  animation:move-twink-back 200s linear infinite;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 200ms ease-in-out;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook, .fa-twitter, .fa-google, .fa-instagram{
+  color:white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  margin: auto;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+.fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+div.contactbox table{
+  position:relative;
+  text-align: left;
+  margin-top:100px;
+  margin-left: 45%;
+  min-width:50px;
+  color: white
+}
